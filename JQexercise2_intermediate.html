@@ -1,0 +1,46 @@
+<html>
+<head>
+	<title>J Query Ex Intermediate 1</title>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+
+			alert('I made it to the top inside JQ');
+
+			$('img').attr({"height":"300", "width":"300"});
+
+
+			$('img').click(function(){
+				$(this).hide();
+			});
+
+			$('#btn1').click(function(){
+				$('img').show();
+			});
+
+		});
+	</script>
+</head>
+
+<body>
+
+	<table> <!-- style = 'border: 2px solid red; width: 500px; height: 500px' -->
+		<tr> 
+			<td><img id="cell1" src="http://goo.gl/ppASMu" alt="http://goo.gl/mxME83"></td> 
+			<td><img src="http://goo.gl/ppASMu" alt="http://goo.gl/mxME83"></td>
+			<td><img src="http://goo.gl/ppASMu" alt="http://goo.gl/mxME83"></td>
+		</tr>
+
+		<tr>
+			<td><img src="http://goo.gl/ppASMu" alt="http://goo.gl/mxME83"></td>
+			<td><img src="http://goo.gl/ppASMu" alt="http://goo.gl/mxME83"></td>
+			<td><img src="http://goo.gl/ppASMu" alt="http://goo.gl/mxME83"></td>
+		</tr>
+	</table>
+
+
+	<button id='btn1'>click to restore imgs</button>
+	
+</body>
+
+</html>
